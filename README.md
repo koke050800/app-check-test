@@ -39,7 +39,7 @@ Use your preferred method (Python or Docker) to start the application.
    
    For Mac:
    ```bash
-   source /.venv/bin/activate 
+   source .venv/bin/activate 
    ```
 4. Install all python requirements:
    
