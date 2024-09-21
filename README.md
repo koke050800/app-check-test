@@ -33,19 +33,22 @@ Use your preferred method (Python or Docker) to start the application.
 1. Create a virtual environment and:
    For Mac:
    ```bash
-   python3 -m venv venv
+   python3 -m venv .venv
    ```
 2. Activate virtual environment:
+   
    For Mac:
    ```bash
    source /.venv/bin/activate 
    ```
-3. Install all python requirements:
+4. Install all python requirements:
+   
    For Mac:
    ```bash
    python -m pip install -r requirements.txt 
    ```
-4. Run app
+6. Run app
+   
    For Mac:
    ```bash
    dotenv run -- python src/firebase_app_check.py
