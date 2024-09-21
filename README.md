@@ -6,7 +6,6 @@ This Python application uses Firebase App Check to verify that requests come fro
 
 - Device verification using Firebase App Check.
 - Simple API with a sample endpoint.
-- JWT for handling authentication and token verification.
 - Containerization with Docker for easy deployment.
 
 ## Requirements
