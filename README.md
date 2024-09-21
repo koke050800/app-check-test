@@ -33,6 +33,7 @@ Use your preferred method (Python or Docker) to start the application.
 3. **Set up a virtual environment:**  
 If you want to run the application using Python, create a virtual environment and activate it:
 
+For Mac:
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
