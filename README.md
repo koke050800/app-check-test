@@ -14,7 +14,7 @@ This Python application uses Firebase App Check to verify that requests come fro
 - Python 3.x
 - (Optional) Docker
 
-## Instructions to Run the Application
+## Instructions to config the Application
 
 1. **Obtain your Firebase `serviceAccountKey.json`:**  
    Make sure you have your Firebase credentials file.
@@ -25,21 +25,28 @@ This Python application uses Firebase App Check to verify that requests come fro
    GOOGLE_APPLICATION_CREDENTIALS_FILE=serviceAccountKey.json
    GOOGLE_APPLICATION_CREDENTIALS_PATH=/absolute/path/to/serviceAccountKey.json
 
-3. **Run the application:**  
+### Run the application 
 Use your preferred method (Python or Docker) to start the application.
 
-### Running the Application with Python
+**Running the Application with Python:**
 
-3. **Set up a virtual environment:**  
-If you want to run the application using Python, create a virtual environment and activate it:
-
-For Mac:
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-```
-
-
-
-
-
+1. Create a virtual environment and:
+   For Mac:
+   ```bash
+   python3 -m venv venv
+   ```
+2. Activate virtual environment:
+   For Mac:
+   ```bash
+   source /.venv/bin/activate 
+   ```
+3. Install all python requirements:
+   For Mac:
+   ```bash
+   python -m pip install -r requirements.txt 
+   ```
+4. Run app
+   For Mac:
+   ```bash
+   dotenv run -- python src/firebase_app_check.py
+   ```
