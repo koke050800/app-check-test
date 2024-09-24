@@ -163,3 +163,4 @@ cython_debug/
 
 #Firebase Account Service Key 
 *firebase-adminsdk*.json
+/.vscode
