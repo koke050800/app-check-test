@@ -12,7 +12,7 @@ This Python application uses Firebase App Check to verify that requests come fro
 
 - Docker
   
-or
+  or
 
 - Python 3.X.X
 
