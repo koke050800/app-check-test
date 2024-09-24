@@ -59,11 +59,11 @@ Use your preferred method (Docker or Python) to start the application.
    
 
    You can refer to the image below for a better understanding:
-   ![App Screenshot](images/images/config_container.png)
+   ![App Screenshot](images/config_container.png)
 
 4. Run the container.
    
-***The App Check service is now available and running on your ```localhost:5001```***
+**The Firebase App Check Service is now available and running on your ```localhost:5001```**
 
 
 ### **Running the Application with Python**
@@ -99,7 +99,7 @@ Use your preferred method (Docker or Python) to start the application.
    dotenv run -- python src/firebase_app_check.py
    ```
    
-**The App Check service is now available and running on your ```localhost:5001```**
+**The Firebase App Check Service is now available and running on your ```localhost:5001```**
 
 
 ## Create your own image and container
