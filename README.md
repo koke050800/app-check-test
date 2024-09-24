@@ -46,7 +46,7 @@ Use your preferred method (Docker or Python) to start the application.
    docker pull koke050800/app-check-test
    ```
 
-3. Configure the container:
+3. Configure the container in Docker Desktop:
    - Expose the port: `5001`
      
    - In Volumes, map the service account JSON file from your host machine (PC) to the container:
