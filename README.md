@@ -38,34 +38,45 @@ Use your preferred method (Docker or Python) to start the application.
 
 ### **Running the Application with Docker**
 
-1. Install Docker Desktop if you don't have it already. You can download it [here](https://www.docker.com/products/docker-desktop).
+Download the Docker image from Docker Hub by running the following command:
 
-2. Download the Docker image from Docker Hub by running the following command:
+```bash
+docker pull koke050800/app-check-test:v2.0
+```
 
+**Run with terminal**
+
+For Mac: 
    ```bash
-   docker pull koke050800/app-check-test:v2.0
+   docker run -it -p 5001:5001 \
+      -v /absolute/path/to/yourServiceAccountKey.json:/app/yourServiceAccountKey.json \
+      -e GOOGLE_APPLICATION_CREDENTIALS_PATH=/app/yourServiceAccountKey.json \
+      app-check-test
    ```
 
-3. Configure the container in Docker Desktop:
-   - Expose the port: `5001`
+**Run with Docker Desktop**
+
+Install Docker Desktop if you don't have it already. You can download it [here](https://www.docker.com/products/docker-desktop).
+
+Configure the container in Docker Desktop:
+  - Expose the port: `5001`
      
-   - In Volumes, map the service account JSON file from your host machine (PC) to the container:
-     - **Host path:** `/absolute/path/to/yourServiceAccountKey.json`
-     - **Container path:** `/app/yourServiceAccountKey.json`
+  - In Volumes, map the service account JSON file from your host machine (PC) to the container:
+    - **Host path:** `/absolute/path/to/yourServiceAccountKey.json`
+    - **Container path:** `/app/yourServiceAccountKey.json`
    
-   - In Environment Variables, add the following variable:
-     - **Variable:** ```GOOGLE_APPLICATION_CREDENTIALS_PATH```
-     - **Value:** `/app/yourServiceAccountKey.json`
+  - In Environment Variables, add the following variable:
+    - **Variable:** ```GOOGLE_APPLICATION_CREDENTIALS_PATH```
+    - **Value:** `/app/yourServiceAccountKey.json`
    
+***The Firebase App Check Service is now available and running on your ```localhost:5001```***
 
-   You can refer to the image below for a better understanding:
-   ![App Screenshot](images/config_container.png)
 
-4. Run the container.
+Image of reference:
+
+![App Screenshot](images/config_container.png)
+
    
-**The Firebase App Check Service is now available and running on your ```localhost:5001```**
-
-
 ### **Running the Application with Python**
 1. Add the following lines to your .env file. Make sure the .env file is located at the highest level within your project folder (root directory):
    
@@ -99,7 +110,7 @@ Use your preferred method (Docker or Python) to start the application.
    dotenv run -- python src/firebase_app_check.py
    ```
    
-**The Firebase App Check Service is now available and running on your ```localhost:5001```**
+***The Firebase App Check Service is now available and running on your ```localhost:5001```***
 
 
 ## Create your own image and container
