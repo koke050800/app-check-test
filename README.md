@@ -16,13 +16,13 @@ or
 
 
 
-## 1. Instructions to config the Application
+##  After run, config the Application
 
 1. **Obtain your Firebase `serviceAccountKey.json`:**  
    Make sure you have your Firebase credentials file.
 
 
-### 2. Run the application 
+## Run the application 
 Use your preferred method (Docker or Python) to start the application.
 
 **Running the Application with Docker:**
