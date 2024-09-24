@@ -34,8 +34,29 @@ For more information, visit the official Firebase guide on [service accounts](ht
 Use your preferred method (Docker or Python) to start the application.
 
 **Running the Application with Docker:**
-1. Install Docker Desktop
-2. 
+
+1. Install Docker Desktop if you don't have it already. You can download it [here](https://www.docker.com/products/docker-desktop).
+
+2. Download the Docker image from Docker Hub by running the following command:
+
+   ```bash
+   docker pull koke050800/app-check-test
+   ```
+
+3. Configure the container:
+   - Expose the port: `5001`
+     
+   - In Volumes, map the service account JSON file from your host machine (PC) to the container:
+     - **Host path:** `/absolute/path/to/yourServiceAccountKey.json`
+     - **Container path:** `/app/yourServiceAccountKey.json`
+   
+   - In Environment Variables, add the following variable:
+     - **Variable:** ```GOOGLE_APPLICATION_CREDENTIALS_PATH```
+     - **Value:** `/app/yourServiceAccountKey.json`
+   
+
+   You can refer to the image below for a better understanding:
+   ![App Screenshot](images/images/config_container.png)
 
 
 **Running the Application with Python:**
@@ -70,7 +91,6 @@ Use your preferred method (Docker or Python) to start the application.
    ```bash
    dotenv run -- python src/firebase_app_check.py
    ```
-   
 ## Create your own image and container
 If you prefer, you can modify or extend the project as needed. The repository includes a pre-configured Dockerfile and docker-compose.yml to help you easily containerize the application.
 
