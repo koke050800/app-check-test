@@ -43,7 +43,7 @@ Use your preferred method (Docker or Python) to start the application.
 2. Download the Docker image from Docker Hub by running the following command:
 
    ```bash
-   docker pull koke050800/app-check-test
+   docker pull koke050800/app-check-test:v2.0
    ```
 
 3. Configure the container in Docker Desktop:
