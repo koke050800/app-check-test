@@ -58,6 +58,8 @@ Use your preferred method (Docker or Python) to start the application.
    You can refer to the image below for a better understanding:
    ![App Screenshot](images/images/config_container.png)
 
+4. Run container.
+
 
 **Running the Application with Python:**
 1. Add the following lines to your .env file. Make sure the .env file is located at the highest level within your project folder (root directory):
