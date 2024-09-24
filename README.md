@@ -28,7 +28,10 @@ Make sure you have your Firebase credentials file. To generate it, follow these 
 - Go to the **Service accounts** tab.
 - Click **Generate new private key** to download the `serviceAccountKey.json` file.
 
+You will need to know the location of this file on your machine because it will be mapped as a volume and added to the environment variables in the Docker container.
+
 For more information, visit the official Firebase guide on [service accounts](https://firebase.google.com/support/guides/service-accounts).
+
 
 ## Run the application 
 Use your preferred method (Docker or Python) to start the application.
