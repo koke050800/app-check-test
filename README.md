@@ -11,10 +11,10 @@ This Python application uses Firebase App Check to verify that requests come fro
 ## Requirements
 
 - Docker
+  
 or
+
 - Python 3.X.X
-
-
 
 ##  Steps before run
 
