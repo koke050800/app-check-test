@@ -33,7 +33,7 @@ For more information, visit the official Firebase guide on [service accounts](ht
 ## Run the application 
 Use your preferred method (Docker or Python) to start the application.
 
-**Running the Application with Docker:**
+### **Running the Application with Docker**
 
 1. Install Docker Desktop if you don't have it already. You can download it [here](https://www.docker.com/products/docker-desktop).
 
@@ -61,7 +61,7 @@ Use your preferred method (Docker or Python) to start the application.
 4. Run container.
 
 
-**Running the Application with Python:**
+### **Running the Application with Python**
 1. Add the following lines to your .env file. Make sure the .env file is located at the highest level within your project folder (root directory):
    
    Add the following lines to your `.env` file:
