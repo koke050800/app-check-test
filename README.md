@@ -30,11 +30,12 @@ Use your preferred method (Python or Docker) to start the application.
 **Running the Application with Python:**
 
 1. Create a virtual environment and:
+   
    For Mac:
    ```bash
    python3 -m venv .venv
    ```
-2. Activate virtual environment:
+3. Activate virtual environment:
    
    For Mac:
    ```bash
@@ -44,7 +45,7 @@ Use your preferred method (Python or Docker) to start the application.
    
    For Mac:
    ```bash
-   python -m pip install -r requirements.txt 
+   pip3 install -r requirements.txt 
    ```
 6. Run app
    
