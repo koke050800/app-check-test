@@ -16,11 +16,19 @@ or
 
 
 
-##  After run, config the Application
+##  Steps before run
 
-1. **Obtain your Firebase `serviceAccountKey.json`:**  
-   Make sure you have your Firebase credentials file.
+**Obtain your Firebase `serviceAccountKey.json`:**
 
+Make sure you have your Firebase credentials file. To generate it, follow these steps:
+
+- Go to the [Firebase Console](https://console.firebase.google.com/).
+- Select your project.
+- Navigate to **Project Settings** (click the gear icon in the sidebar).
+- Go to the **Service accounts** tab.
+- Click **Generate new private key** to download the `serviceAccountKey.json` file.
+
+For more information, visit the official Firebase guide on [service accounts](https://firebase.google.com/support/guides/service-accounts).
 
 ## Run the application 
 Use your preferred method (Docker or Python) to start the application.
